@@ -25,6 +25,7 @@ body {
   background-color: hsl(234, 75%, 19%);
   color: hsl(0, 0%, 100%);
   font-size: 1.2rem;
+  line-height: 1.7;
 }
 
 main {
@@ -35,7 +36,7 @@ main {
 
 a {
   color: inherit;
-  font-size: 1.5rem;
+
   cursor: pointer;
 }
 
@@ -49,16 +50,26 @@ a {
   margin-right: 0.5em;
 }
 
+.title {
+  text-align: center;
+}
+
+.title-steps {
+  font-size: 2.5rem;
+  color: hsl(60, 100%, 85%);
+  font-family: 'FuturaRennerLight';
+}
+
 .title-main {
   font-size: 4rem;
-  text-align: center;
   color: hsl(60, 100%, 58%);
+  border-bottom: 2px solid hsl(60, 100%, 58%);
 }
 
 .title-recipe {
   font-size: 3rem;
-  text-align: center;
   color: hsl(60, 100%, 58%);
+  border-bottom: 2px solid hsl(60, 100%, 58%);
 }
 
 .recipe-list {
@@ -70,4 +81,16 @@ a {
 
 .recipe-link {
   text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.origin-link {
+  text-align: center;
+}
+
+.recipe-intro,
+.recipe-ing,
+.recipe-directions,
+.recipe-cont {
+  margin: 2.5em 0;
 }
