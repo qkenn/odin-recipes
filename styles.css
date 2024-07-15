@@ -40,16 +40,6 @@ a {
   cursor: pointer;
 }
 
-.recipe-item {
-  display: flex;
-  align-items: center;
-}
-
-.recipe-item::before {
-  content: '🇨🇭';
-  margin-right: 0.5em;
-}
-
 .title {
   text-align: center;
 }
@@ -72,17 +62,55 @@ a {
   border-bottom: 2px solid hsl(60, 100%, 58%);
 }
 
+/* RECIPE LIST / */
+
 .recipe-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 0.5em;
 }
 
 .recipe-link {
   text-decoration: none;
   font-size: 1.5rem;
 }
+
+.recipe-link:hover {
+  text-decoration: underline;
+}
+
+.recipe-item {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-item::before {
+  /* content: '🇨🇭'; */
+  margin-right: 0.5em;
+}
+
+.recipe-item[data-id='kombucha']::before {
+  content: '🍹';
+}
+
+.recipe-item[data-id='zurich-meat']::before {
+  content: '🇨🇭';
+}
+
+.recipe-item[data-id='three-bean-salad']::before {
+  content: '🥗';
+}
+
+.recipe-item[data-id='chicken-bulghur']::before {
+  content: '🐔';
+}
+
+.recipe-item[data-id='newfoundland']::before {
+  content: '🐟';
+}
+
+/* RECIPE LIST \ */
 
 .origin-link {
   text-align: center;
