@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* CUSTOM FONT / */
+
 @font-face {
   font-family: 'FuturaRennerRegular';
   src: url('./assets/fonts/FuturaRenner-Regular.woff2') format('woff2'),
@@ -18,13 +20,17 @@
     url('./assets/fonts/FuturaRenner-Light.ttf') format('truetype');
 }
 
+/* CUSTOM FONT \ */
+
+/* GENERAL STYLING / */
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'FuturaRennerRegular', Arial, sans-serif;
   background-color: hsl(234, 75%, 19%);
   color: hsl(0, 0%, 100%);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.7;
 }
 
@@ -36,9 +42,12 @@ main {
 
 a {
   color: inherit;
-
   cursor: pointer;
 }
+
+/* GENERAL STYLING \ */
+
+/* SITE TITLES / */
 
 .title {
   text-align: center;
@@ -62,7 +71,9 @@ a {
   border-bottom: 2px solid hsl(60, 100%, 58%);
 }
 
-/* RECIPE LIST / */
+/* SITE TITLES \ */
+
+/* HOMEPAGE RECIPE LIST / */
 
 .recipe-list {
   list-style: none;
@@ -70,6 +81,12 @@ a {
   flex-direction: column;
   gap: 0.5em;
   margin: 6rem 0;
+  padding: 0;
+}
+
+.recipe-list li {
+  display: flex;
+  justify-content: space-between;
 }
 
 .recipe-link {
@@ -86,36 +103,33 @@ a {
   align-items: center;
 }
 
-.recipe-item::before {
-  /* content: '🇨🇭'; */
+.recipe-link::before {
   margin-right: 0.5em;
 }
 
-.recipe-item[data-id='kombucha']::before {
+.recipe-link[data-id='kombucha']::before {
   content: '🍹';
 }
 
-.recipe-item[data-id='zurich-meat']::before {
+.recipe-link[data-id='zurich-meat']::before {
   content: '🇨🇭';
 }
 
-.recipe-item[data-id='three-bean-salad']::before {
+.recipe-link[data-id='three-bean-salad']::before {
   content: '🥗';
 }
 
-.recipe-item[data-id='chicken-bulghur']::before {
+.recipe-link[data-id='chicken-bulghur']::before {
   content: '🐔';
 }
 
-.recipe-item[data-id='newfoundland']::before {
+.recipe-link[data-id='newfoundland']::before {
   content: '🐟';
 }
 
-/* RECIPE LIST \ */
+/* HOMEPAGE RECIPE LIST \ */
 
-.origin-link {
-  text-align: center;
-}
+/* RECIPE PAGE / */
 
 .recipe-intro,
 .recipe-ing,
@@ -124,6 +138,8 @@ a {
   margin: 2.5em 0;
 }
 
-.data-origin {
+/* RECIPE PAGE \ */
+
+.origin-link {
   text-align: center;
 }
