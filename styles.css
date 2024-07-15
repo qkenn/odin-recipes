@@ -23,25 +23,28 @@ body {
   margin: 0;
   font-family: 'FuturaRennerRegular', Arial, sans-serif;
   background-color: hsl(234, 75%, 19%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
 }
 
 main {
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 a {
-  color: hsl(0, 0%, 100%);
+  color: inherit;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
-li {
+.recipe-item {
   display: flex;
   align-items: center;
 }
 
-li::before {
+.recipe-item::before {
   content: '🇨🇭';
   margin-right: 0.5em;
 }
@@ -54,4 +57,17 @@ li::before {
 
 .title-recipe {
   font-size: 3rem;
+  text-align: center;
+  color: hsl(60, 100%, 58%);
+}
+
+.recipe-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.recipe-link {
+  text-decoration: none;
 }
