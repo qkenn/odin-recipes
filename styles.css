@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'FuturaRennerRegular';
+  src: url('./assets/fonts/FuturaRenner-Regular.woff2') format('woff2'),
+    url('./assets/fonts/FuturaRenner-Regular.woff') format('woff'),
+    url('./assets/fonts/FuturaRenner-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FuturaRennerLight';
+  src: url('./assets/fonts/FuturaRenner-Light.woff2') format('woff2'),
+    url('./assets/fonts/FuturaRenner-Light.woff') format('woff'),
+    url('./assets/fonts/FuturaRenner-Light.ttf') format('truetype');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'FuturaRennerRegular', Arial, sans-serif;
+}
