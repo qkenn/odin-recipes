@@ -69,6 +69,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  margin: 6rem 0;
 }
 
 .recipe-link {
@@ -121,4 +122,8 @@ a {
 .recipe-directions,
 .recipe-cont {
   margin: 2.5em 0;
+}
+
+.data-origin {
+  text-align: center;
 }
