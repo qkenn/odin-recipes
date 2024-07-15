@@ -22,4 +22,36 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'FuturaRennerRegular', Arial, sans-serif;
+  background-color: hsl(234, 75%, 19%);
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: '🇨🇭';
+  margin-right: 0.5em;
+}
+
+.title-main {
+  font-size: 4rem;
+  text-align: center;
+  color: hsl(60, 100%, 58%);
+}
+
+.title-recipe {
+  font-size: 3rem;
 }
